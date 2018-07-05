@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanKenward.Files", "RyanKenward.Files\RyanKenward.Files.csproj", "{343D1194-2AFE-483D-B67D-7ABF4F4D4E7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RyanKenward.Files.Tests", "RyanKenward.Files.Tests\RyanKenward.Files.Tests.csproj", "{FB317016-DB5E-49B3-8965-7FF608C0E4E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{343D1194-2AFE-483D-B67D-7ABF4F4D4E7E}.Debug|x86.Build.0 = Debug|x86
 		{343D1194-2AFE-483D-B67D-7ABF4F4D4E7E}.Release|x86.ActiveCfg = Release|x86
 		{343D1194-2AFE-483D-B67D-7ABF4F4D4E7E}.Release|x86.Build.0 = Release|x86
+		{FB317016-DB5E-49B3-8965-7FF608C0E4E3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FB317016-DB5E-49B3-8965-7FF608C0E4E3}.Debug|x86.Build.0 = Debug|Any CPU
+		{FB317016-DB5E-49B3-8965-7FF608C0E4E3}.Release|x86.ActiveCfg = Release|Any CPU
+		{FB317016-DB5E-49B3-8965-7FF608C0E4E3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

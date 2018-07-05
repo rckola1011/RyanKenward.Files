@@ -30,10 +30,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.IO.Abstractions">
+      <HintPath>..\packages\System.IO.Abstractions.2.1.0.184\lib\net40\System.IO.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Business\FileSearch.cs" />
+    <Compile Include="Business\DirectorySearch.cs" />
+    <Compile Include="Business\FileManager.cs" />
+    <Compile Include="Interfaces\IFileSearch.cs" />
+    <Compile Include="Interfaces\IDirectorySearch.cs" />
+    <Compile Include="Interfaces\IFileManager.cs" />
+    <Compile Include="Business\SearchManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
