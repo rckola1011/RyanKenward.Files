@@ -15,7 +15,7 @@ namespace RyanKenward.Files.Business
         {
             get 
             {
-                return _allLinesFound ?? new List<List<string>>();
+                return _allLinesFound;
             }
         }
 
@@ -23,7 +23,7 @@ namespace RyanKenward.Files.Business
         {
             get
             {
-                return _allInstancesFound ?? new List<int>();
+                return _allInstancesFound;
             }
         }
 
@@ -36,8 +36,8 @@ namespace RyanKenward.Files.Business
         }
 
         private IFileSystem _fileSystem { get; }
-        private List<List<string>> _allLinesFound { get; set; }
-        private List<int> _allInstancesFound { get; set; }
+        private List<List<string>> _allLinesFound { get; set; } = new List<List<string>>();
+        private List<int> _allInstancesFound { get; set; } = new List<int>();
         private int _numberOfFilesSearched { get; set; }
 
         /// <summary>
@@ -75,12 +75,6 @@ namespace RyanKenward.Files.Business
             var linesFound = new List<string>();
             var instancesFound = 0;
 
-            if (_allLinesFound == null)
-                _allLinesFound = new List<List<string>>();
-
-            if (_allInstancesFound == null)
-                _allInstancesFound = new List<int>();
-            
             try
             {
                 // search file line by line

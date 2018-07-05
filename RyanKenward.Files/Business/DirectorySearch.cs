@@ -71,8 +71,8 @@ namespace RyanKenward.Files.Business
         {
             if (string.IsNullOrEmpty(destinationFileName))
                 throw new ArgumentException("Destination file name cannot be null or empty.");
-
-            if (destinationFileName.IndexOfAny(Path.GetInvalidFileNameChars()) >= 0)
+            
+            if (destinationFileName.IndexOfAny(_fileSystem.Path.GetInvalidFileNameChars()) >= 0)
                 throw new ArgumentException("Destination file contains one or more invalid file name characters.");
 
             var outputDirectory = _fileSystem.Path.Combine(_searchDirectory, _outputFolderName);

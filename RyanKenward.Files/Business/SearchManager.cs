@@ -1,5 +1,4 @@
-﻿using System;
-namespace RyanKenward.Files.Business
+﻿namespace RyanKenward.Files.Business
 {
     public class SearchManager
     {
